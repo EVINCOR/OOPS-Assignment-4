@@ -53,3 +53,6 @@ while(cap.isOpened()):
     final, contours, hierchary = cv2.findContours(final, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
     final = cv2.drawContours(final, contours, -1, 0, 3)
     
+    #APPLIED BITWISE-AND ON ORIGINAL IMAGE TO CREATE OUTPUT OF IMAGE THROUGH SUPERIMPOSING GRAYSCALE AND OTHER IMAGES TOO
+    final = cv2.bitwise_and(empty_img,original_img)
+    final, contour, hiearchy = cv2.ImposeContours
